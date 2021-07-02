@@ -11,7 +11,7 @@ One of the classic programming problems that is often solved by recursion is the
 * What is the (theoretical) maximum number of disks that your program can move without generating an error?
 * What limits the number of iterations? What is the implication for application and system security?
 
-## What is the game of Tower of Hanoi?
+### What is the game of Tower of Hanoi?
 
 Tower of Hanoi consists of three pegs or towers with n disks placed one over the other.
 
