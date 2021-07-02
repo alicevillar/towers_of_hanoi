@@ -31,8 +31,7 @@ In this repository, I have created a version of Tower of Hanoi using asterisks t
 
 To move N disks from one peg to another, I need 2^N - 1. Thus, if N-1 > 1, then it's necessary to repeat this breakdown for smaller N until N-1 = 1. In short, the total number of moves required to solve the puzzle with N disks is 2^N - 1. 
  
-
-Resources:
+### Resources:
 
 * Levy, Uri. The Magnetic Tower of Hanoi. Available from: https://arxiv.org/ftp/arxiv/papers/1003/1003.0225.pdf
 
