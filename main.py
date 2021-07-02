@@ -1,17 +1,25 @@
 # Recursive Python function to solve tower of hanoi
 
-def TowerOfHanoi(n, from_rod, to_rod, aux_rod):
+# n = number of disks
+# torre de origem  = from_rod
+#  torre destino => to_rod
+# a torre auxiliar pela qual vai passar => aux_rod
+
+
+def TowerOfHanoi(n, torre_origem, torre_destino, torre_auxiliar):
     if n == 1:
-        print("Move disk 1 from rod", from_rod, "to rod", to_rod)
+        print("Move disk 1 from tower", torre_origem, "to tower", torre_destino)
         return
-    TowerOfHanoi(n - 1, from_rod, aux_rod, to_rod)
-    print("Move disk", n, "from rod", from_rod, "to rod", to_rod)
-    TowerOfHanoi(n - 1, aux_rod, to_rod, from_rod)
+
+    TowerOfHanoi(n - 1, torre_origem, torre_auxiliar, torre_destino)
+
+    print("Move disk", n, "from tower", torre_origem, "to tower", torre_destino)
+
+    TowerOfHanoi(n - 1, torre_auxiliar, torre_destino, torre_origem)
 
 
 # Driver code
-n = 4
+n = 64
 TowerOfHanoi(n, 'A', 'C', 'B')
-# A, C, B are the name of rods
 
-# Contributed By Harshit Agrawal
+# A, C, B are the name of torres
