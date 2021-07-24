@@ -13,9 +13,7 @@ def TowerOfHanoi(n, tower_origin, tower_destiny, tower_auxiliary):
 
     TowerOfHanoi(n - 1, tower_auxiliary, tower_destiny, tower_origin)
 
-
-# Driver code
-n = 64
+# Testing the code with 3 disks
+n = 3
 TowerOfHanoi(n, 'A', 'C', 'B')
-
 # A, C, B are the name of the towers
