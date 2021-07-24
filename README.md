@@ -24,12 +24,14 @@ This is a classical example of Recursion (which happens when a function calls it
 
 ### Results 
 
-In this repository, I have created a version of Tower of Hanoi using asterisks to represent the disks. I could realize that the number of steps almost double every time I insert another disk in the stack. While the 3-disk puzzle required 7 steps. 4-disk requires 7+1+7 = 15 steps to be solved. 
+In this repository, I have created a version of Tower of Hanoi using asterisks to represent the disks. The number of steps exponentially increases every time I insert another disk in the stack. While the 3-disk puzzle required 7 steps. 4-disk requires 7+1+7 = 15 steps to be solved. 
+
+![print](disks&moves.PNG)
+
 
 To move N disks from one peg to another, I need 2^N - 1. Thus, if N-1 > 1, then it's necessary to repeat this breakdown for smaller N until N-1 = 1. In short, the total number of moves required to solve the puzzle with N disks is 2^N - 1. 
  
-
-Resources:
+### Resources:
 
 * Levy, Uri. The Magnetic Tower of Hanoi. Available from: https://arxiv.org/ftp/arxiv/papers/1003/1003.0225.pdf
 
