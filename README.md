@@ -54,7 +54,7 @@ x=1500
 sys.setrecursionlimit(x)
 ```
 
-If you are dealing with large inputs, you can set it to, 10^6 so that large inputs can be handled without any errors.
+Using the setrecursionlimit() method, we can increase the recursion limit and the program can be executed without errors even on large inputs.
 
 
 ### :paperclip: My solution to Question 4  
