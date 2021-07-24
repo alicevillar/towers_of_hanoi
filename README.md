@@ -44,6 +44,10 @@ Move   7: Tower 1 ==>> Tower 3
 
 ### :paperclip: My solution to Question 3  
 
+The time complexity for the recursive solution of Tower of Hanoi is O(2^n), where n is the number of discs. If the program uses more memory space than the stack size then stack overflow will occur and can result in a program crash. If function recursively call itself infinite times then the stack is unable to store large number of local variables used by every function call and will result in overflow of stack.
+
+### :paperclip: My solution to Question 4  
+
 [Python's default recursion limit is 1000](https://www.pythoncentral.io/resetting-the-recursion-limit/), meaning that Python won't let a function call on itself more than 1000 times, which for most people is probably enough. The limit exists because allowing recursion to occur more than 1000 times doesn't exactly make for lightweight code. If, however, you find yourself in need of a higher recursion limit, there is a way to override the default limit and reset it to a number of your choice. This isn't exactly recommended, because it can definitely slow your code down, but on the occasion that it needs to be done, here's how you can do it:
 
 Let's say you want to set the limit to 1500. All you really need is to set a variable to 1500 followed by one line of code.
@@ -54,18 +58,8 @@ x=1500
 sys.setrecursionlimit(x)
 ```
 
-Using the setrecursionlimit() method, we can increase the recursion limit and the program can be executed without errors even on large inputs.
+Using the setrecursionlimit() method, we can increase the recursion limit and the program can be executed without errors even on large inputs. It is to to avoid a stack overflow. However, Python interpreter limits the depths of recursion to avoid infinite recursions, resulting in stack overflows. 
 
-
-### :paperclip: My solution to Question 4  
-
-
-
- Time complexity for the recursive solution:
-The time complexity for the recursive solution of Tower of Hanoi is O(2^n), where n is the number of discs.
-
-
- 
  
 ### Resources:
 
