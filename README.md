@@ -17,14 +17,29 @@ Tower of Hanoi consists of three pegs or towers with n disks placed one over the
 * Only one disk can be moved at a time.
 * No disk can be placed on top of the smaller disk.
 
-This is a classical example of Recursion (which happens when a function calls itself). I have created a version of Tower of Hanoi using asterisks to represent the disks. The number of steps exponentially increases every time I insert another disk in the stack: 
+This is a classical example of Recursion (which happens when a function calls itself). I have created a version of Tower of Hanoi using asterisks to represent the disks. The number of steps exponentially increases every time I insert another disk in the stack. Click [here](https://github.com/alicevillar/towers_of_hanoi/blob/main/disks%26moves.PNG) to see a table showing this progression of moves every time we add a disk.  
 
-![print](disks&moves.PNG)
-
-To move N disks from one peg to another, I need 2^N - 1. Thus, if N-1 > 1, then it's necessary to repeat this breakdown for smaller N until N-1 = 1. In short, the total number of moves required to solve the puzzle with N disks is 2^N - 1. 
+* Notice: To move N disks from one peg to another, I need 2^N - 1. Thus, if N-1 > 1, then it's necessary to repeat this breakdown for smaller N until N-1 = 1. In short, the total number of moves required to solve the puzzle with N disks is 2^N - 1. 
 
 
 ### :paperclip: My solution to Question 2  
+
+In the file [hanoi2.py](https://github.com/alicevillar/towers_of_hanoi/blob/main/hanoi2.py
+) I created a version that asks for the number of disks and then executes the moves. Then it displays the number of moves executed. Here is a sample flow of the code:
+
+```
+How many disks do you want? 
+ -->3
+Solution to the puzzle (7 moves): 
+
+Move   1: Tower 1 --> Tower 3
+Move   2: Tower 1 --> Tower 2
+Move   3: Tower 3 --> Tower 2
+Move   4: Tower 1 --> Tower 3
+Move   5: Tower 2 --> Tower 1
+Move   6: Tower 2 --> Tower 3
+Move   7: Tower 1 --> Tower 3
+```
 
 
 ### :paperclip: My solution to Question 3  
