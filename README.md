@@ -30,15 +30,15 @@ In the file [hanoi2.py](https://github.com/alicevillar/towers_of_hanoi/blob/main
 ```
 How many disks do you want? 
  -->3
-Solution to the puzzle (7 moves): 
+Here we have 7 moves!: 
 
-Move   1: Tower 1 --> Tower 3
-Move   2: Tower 1 --> Tower 2
-Move   3: Tower 3 --> Tower 2
-Move   4: Tower 1 --> Tower 3
-Move   5: Tower 2 --> Tower 1
-Move   6: Tower 2 --> Tower 3
-Move   7: Tower 1 --> Tower 3
+Move   1: Tower 1 ==>> Tower 3
+Move   2: Tower 1 ==>> Tower 2
+Move   3: Tower 3 ==>> Tower 2
+Move   4: Tower 1 ==>> Tower 3
+Move   5: Tower 2 ==>> Tower 1
+Move   6: Tower 2 ==>> Tower 3
+Move   7: Tower 1 ==>> Tower 3
 ```
 
 
