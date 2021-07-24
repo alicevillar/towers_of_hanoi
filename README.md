@@ -34,7 +34,8 @@ To move N disks from one peg to another, I need 2^N - 1. Thus, if N-1 > 1, then 
 
 
 
- 
+ Time complexity for the recursive solution:
+The time complexity for the recursive solution of Tower of Hanoi is O(2^n), where n is the number of discs.
 
 
  
