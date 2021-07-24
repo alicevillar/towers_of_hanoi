@@ -29,6 +29,18 @@ To move N disks from one peg to another, I need 2^N - 1. Thus, if N-1 > 1, then 
 
 ### :paperclip: My solution to Question 3  
 
+[Python's default recursion limit is 1000](https://www.pythoncentral.io/resetting-the-recursion-limit/), meaning that Python won't let a function call on itself more than 1000 times, which for most people is probably enough. The limit exists because allowing recursion to occur more than 1000 times doesn't exactly make for lightweight code. If, however, you find yourself in need of a higher recursion limit, there is a way to override the default limit and reset it to a number of your choice. This isn't exactly recommended, because it can definitely slow your code down, but on the occasion that it needs to be done, here's how you can do it:
+
+Let's say you want to set the limit to 1500. All you really need is to set a variable to 1500 followed by one line of code.
+
+```
+import sys
+x=1500
+sys.setrecursionlimit(x)
+```
+
+Remember: only take advantage of this method if it's absolutely essential.
+
 
 ### :paperclip: My solution to Question 4  
 
