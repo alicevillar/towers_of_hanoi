@@ -25,7 +25,7 @@ This is a classical example of Recursion (which happens when a function calls it
 ### :paperclip: My solution to Question 2  
 
 In the file [hanoi2.py](https://github.com/alicevillar/towers_of_hanoi/blob/main/hanoi2.py
-) I created a version that asks for the number of disks and then executes the moves. Then it displays the number of moves executed. Here is a sample flow of the code:
+) I This version asks for the number of disks and then executes the moves. Then it displays the number of moves executed. Here is a sample flow of the code:
 
 ```
 How many disks do you want? 
